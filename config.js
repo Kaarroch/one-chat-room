@@ -4,7 +4,7 @@ exports.baseUrl = process.env.BASE_URL || '';
 exports.databaseUrl = process.env.MONGODB_URI || process.env.DATABASE_URL || 'mongodb://localhost/one-chat-room';
 exports.maxMessageLength = getEnvInt('MAX_MESSAGE_LENGTH') || 500;
 exports.maxMessages = getEnvInt('MAX_MESSAGES') || 10000;
-exports.port = getEnvInt('PORT') || 4000;
+exports.port = getEnvInt('PORT') || 3001;
 
 if (exports.maxMessageLength <= 0) {
   throw new Error(`Environment variable $MAX_MESSAGE_LENGTH must be an integer greater than or equal to 1, but its value is ${exports.maxMessageLength}`);
