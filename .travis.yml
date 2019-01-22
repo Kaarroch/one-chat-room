@@ -1,12 +1,11 @@
 language: node_js
-
 node_js:
-  - '10'
-  
+- '10'
 services:
-  - mongodb
-  
+- mongodb
 before_script:
-  - npm start &
-  - sleep 5
-  
+- npm start &
+- sleep 5
+deploy:
+  api_key:
+    secure: RVyMzNeEbalFMXh0tUJ4/o7IavUy5Fa3j52HYaBQAsTCN9JHH6Aw6t0QmK2kZyOe8O3gsPSpZ2MfmHVwQAPweG2j38DscN4fmd7B+K9EQ0f/ul38fJXPxBubynDpIAkrlL4qf8ot+hNUXFS13Gv4fS7Kiio4ta2KdtG3pXSgih8oHYMaZ0WEaeybx7FG1vYee+ofwDYwTlg2Zu5URlGdf+wbxouhuJf0qHqvVUstLqJgxpTwn7J1kXblZ3wARcmt4jI3avEQgoMWhbXAR6UPIY2lLG+IWsL00Nq0JGUIprIK+5pYOrlZndYT4bE3Wa0B+s3ESHFMut7HA6a8sykhr42ziyou8mmwGtStPoHVSl0mErPQLU+Qq+/snuWBHH3TLSkGHuDR2IPSOrpvPkL9h0pb7vYtdzxRY81Y1GZ8d12DaOu+LIb6b3G7ZImyYY1nFtQmpGDmrJzCAOmsgcfaG3ponJApmD07AGp1LdiWYX3PmcbdeLCXHAFWmfakAlOmKMAeTk4qSOGl/Wbq6jnI5RaeZRxhxXONz1xE2nA8U/CH4wDZyY1tGgsA/K1dUAJwiK+i1PSOBN+IfqnW/lUSLn8VgA+08CkDdA4Hy55BODJX4yFUzkuKo7cvlh+HqUOA4V4hpu2OUZ1o0It0GWSB+KhvMzWFj9mEhzpX9IHvBoM=
